@@ -7,7 +7,7 @@
 
 - part: 数据可视化
   chapters:
-  - file: visualization/content
+  - file: visualization/intro
   - file: visualization/plotly
 
 - part: 地理空间数据
