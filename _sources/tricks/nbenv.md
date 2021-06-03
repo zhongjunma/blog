@@ -46,7 +46,7 @@ Notebook 相关
 复制粘贴，修改环境名，回车，然后等着
 
 ```sh
-envname=
+envname="nbenv"
 conda create -n $envname python=3.8 --yes
 conda activate $envname
 conda config --add channels conda-forge 
@@ -94,9 +94,9 @@ jupyter kernelspec remove $kernel_name
 克隆环境
 
 ```sh
-new_env_name="crawler"
-clone_env_name="nbenv"
-conda create -n $env_name --clone $clone_env_name
+new_env_name="newenv"
+old_env_name="oldenv"
+conda create -n $env_name --clone $old_env_name
 conda activate $env_name 
 python -m ipykernel install --name $env_name 
 ```

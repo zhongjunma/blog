@@ -298,7 +298,7 @@
 <div class="section" id="id1">
 <h2>安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>复制粘贴，修改环境名，回车，然后等着</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">envname</span><span class="o">=</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">envname</span><span class="o">=</span><span class="s2">&quot;nbenv&quot;</span>
 conda create -n <span class="nv">$envname</span> <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 --yes
 conda activate <span class="nv">$envname</span>
 conda config --add channels conda-forge 
@@ -341,9 +341,9 @@ jupyter kernelspec remove <span class="nv">$kernel_name</span>
 </pre></div>
 </div>
 <p>克隆环境</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">new_env_name</span><span class="o">=</span><span class="s2">&quot;crawler&quot;</span>
-<span class="nv">clone_env_name</span><span class="o">=</span><span class="s2">&quot;nbenv&quot;</span>
-conda create -n <span class="nv">$env_name</span> --clone <span class="nv">$clone_env_name</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">new_env_name</span><span class="o">=</span><span class="s2">&quot;newenv&quot;</span>
+<span class="nv">old_env_name</span><span class="o">=</span><span class="s2">&quot;oldenv&quot;</span>
+conda create -n <span class="nv">$env_name</span> --clone <span class="nv">$old_env_name</span>
 conda activate <span class="nv">$env_name</span> 
 python -m ipykernel install --name <span class="nv">$env_name</span> 
 </pre></div>
