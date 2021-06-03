@@ -2,7 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
 - file: intro
-- file: content
+- file: markdowns/content
   sections:
-    - file: markdown
-    - file: notebooks
+    - file: markdowns/markdown
+    - file: notebooks/notebooks
+    - file: notebooks/plotly绘图
