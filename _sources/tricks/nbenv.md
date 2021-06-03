@@ -17,12 +17,12 @@
 2. seaborn（快速生成图）
 3. plotly（动态图，绘制地图）
 
-GIS
+地理空间数据处理
 
-1. geopandas（GIS 数据导入导出操作）
+1. geopandas
 
 MySQL 数据库
-1. pymysql（连接数据库）
+1. pymysql
 
 奇技淫巧
 
