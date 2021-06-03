@@ -14,6 +14,15 @@ import plotly
 import plotly.graph_objects as go
 import plotly.express as px
 
+
+# In[2]:
+
+
+{
+    "tags": [
+        "remove-input",
+    ]
+}
 mapbox_token = 'pk.eyJ1IjoiemhvbmdqdW5tYSIsImEiOiJja2pwbzA3c2YwNjd3MnJxaDFrcHh5NmNyIn0.6mzTX-clHuP5h9lUO17TCw'
 
 
@@ -29,7 +38,7 @@ mapbox_token = 'pk.eyJ1IjoiemhvbmdqdW5tYSIsImEiOiJja2pwbzA3c2YwNjd3MnJxaDFrcHh5N
 # 
 # 不分组，也没有 heading，只是单纯的将 point 绘制在地图上。
 
-# In[2]:
+# In[3]:
 
 
 def plot_points(df):
@@ -50,14 +59,14 @@ def plot_points(df):
     return fig
 
 
-# In[3]:
+# In[4]:
 
 
 ais_df = pd.read_csv('./data/ais_Dalian_201801.csv', sep='|', header=0)
 ais_df
 
 
-# In[4]:
+# In[5]:
 
 
 plot_points(ais_df)
@@ -67,7 +76,7 @@ plot_points(ais_df)
 # 
 # 按照 point 的 label 分组，每一组有不同的颜色。
 
-# In[5]:
+# In[6]:
 
 
 def plot_points_by_label(df):
@@ -89,14 +98,14 @@ def plot_points_by_label(df):
     return fig
 
 
-# In[6]:
+# In[7]:
 
 
 stay_points_df = pd.read_csv('./data/Ras Tanura.csv', sep='|', header=0)
 stay_points_df
 
 
-# In[7]:
+# In[8]:
 
 
 plot_points_by_label(stay_points_df)
@@ -106,7 +115,7 @@ plot_points_by_label(stay_points_df)
 # 
 # AIS data 中其实也包含了 heading，在绘制 point 的时候，加上 heading 可以更加直观。
 
-# In[8]:
+# In[9]:
 
 
 def plot_points_heading(df):
@@ -127,7 +136,7 @@ def plot_points_heading(df):
 
     fig.update_layout(
         mapbox={
-            'accesstoken': token,
+            'accesstoken': mapbox_token,
             'style': "satellite-streets", 
             'zoom': 10,
             'center': {
@@ -141,7 +150,7 @@ def plot_points_heading(df):
     return fig
 
 
-# In[9]:
+# In[10]:
 
 
 plot_points_heading(ais_df)
