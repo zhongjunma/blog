@@ -87,7 +87,7 @@ jupyter kernelspec list
 删除 jupyter kernel
 
 ```sh
-kernel_name="nbenv"
+kernel_name="delenv"
 jupyter kernelspec remove $kernel_name
 ```
 
