@@ -1,7 +1,12 @@
-Welcome to your Jupyter Book
-============================
+继续做自己喜欢的事
+================================
 
-This is a small sample book to give you a feel for how book content is
-structured.
+把别人的经验变成自己的，他的本事就大了。
 
-Check out the content pages bundled with this sample book to get started.
+测试插入静态图片
+
+![asuka](./images/asuka.png)
+
+![girlfriend](./images/girlfriend.jpeg)
+
+![erciyuan](./images/erciyuan.png)
