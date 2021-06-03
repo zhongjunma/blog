@@ -2,8 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
 - file: intro
-- file: markdowns/content
+
+- file: zen
+
+- file: visualization/content
   sections:
-    - file: markdowns/markdown
-    - file: notebooks/notebooks
-    - file: notebooks/plotly绘图
+    - file: visualization/plotly
