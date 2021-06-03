@@ -1,10 +1,15 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-#
 - file: intro
 
-- file: zen
+- part: 奇技淫巧
+  chapters:
+  - file: tricks/zen
+  - file: tricks/nbenv
 
-- file: visualization/content
-  sections:
-    - file: visualization/plotly
+- part: 数据可视化
+  chapters:
+  - file: visualization/content
+  - file: visualization/plotly
+
+- part: 地理空间数据
+  chapters:
+  - file: geo/geopandas.ipynb

@@ -3,3 +3,5 @@ _build
 .DS_Store
 visualization/data
 visualization/.ipynb_checkpoints
+geo/data
+geo/.ipynb_checkpoints
