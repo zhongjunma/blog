@@ -16,6 +16,8 @@
   chapters:
   - file: geo/geopandas.ipynb
 
+# file:///Users/mazhongjun/Documents/blog/_build/html/index.html
+# http://localhost:8888
 # conda activate jbenv
 # jb build .
 # ghp-import -n -p -f _build/html
