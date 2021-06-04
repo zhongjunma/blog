@@ -4,6 +4,7 @@
   chapters:
   - file: tricks/zen
   - file: tricks/nbenv
+  - file: tricks/json
 
 - part: 数据可视化
   chapters:
