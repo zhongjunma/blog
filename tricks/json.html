@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visualization &#8212; 小🐎的博客</title>
+    <title>JSON 数据解析 &#8212; 小🐎的博客</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="../_static/PatrickStar.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Plotly" href="plotly.html" />
-    <link rel="prev" title="JSON 数据解析" href="../tricks/json.html" />
+    <link rel="next" title="Visualization" href="../visualization/intro.html" />
+    <link rel="prev" title="Jupyter Notebook 环境" href="nbenv.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,19 +89,19 @@
   奇技淫巧
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../tricks/zen.html">
+  <a class="reference internal" href="zen.html">
    The Zen of Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../tricks/nbenv.html">
+  <a class="reference internal" href="nbenv.html">
    Jupyter Notebook 环境
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../tricks/json.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    JSON 数据解析
   </a>
  </li>
@@ -111,14 +111,14 @@
   数据可视化
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../visualization/intro.html">
    Visualization
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="plotly.html">
+  <a class="reference internal" href="../visualization/plotly.html">
    Plotly
   </a>
  </li>
@@ -175,9 +175,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/visualization/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/tricks/json.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -195,7 +195,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fvisualization/intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Ftricks/json.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -211,6 +211,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/zhongjunma/blog.git/master?urlpath=tree/tricks/json.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -224,24 +241,68 @@
         
               <div>
                 
-  <div class="section" id="visualization">
-<h1>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h1>
-<p>可视化让数据变得更加直观，我主要使用这些 Python package：</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://matplotlib.org/stable/index.html"><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></a></p></li>
-<li><p><a class="reference external" href="http://seaborn.pydata.org/tutorial.html"><code class="docutils literal notranslate"><span class="pre">seaborn</span></code></a></p></li>
-<li><p><a class="reference external" href="https://plotly.com/python/"><code class="docutils literal notranslate"><span class="pre">plotly</span></code></a></p></li>
-</ul>
-<p>Matplotlib 可以说是最强大的 Python 可视化工具了吧，通常来说，我会在需要最终的展示图时，才会使用它，难度还是比较大的。</p>
-<p>Seaborn 在查看数据时会被经常用到，一行代码就可以快速生成图片。</p>
-<p>Plotly 是动态的，我一般用它去可视化 GIS，画一些漂亮的地图。</p>
-<p>除了这几个 Python package，我还会用一些工具辅助绘图：</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://kepler.gl/"><code class="docutils literal notranslate"><span class="pre">kepler.gl</span></code></a></p></li>
-<li><p><a class="reference external" href="https://gephi.org/"><code class="docutils literal notranslate"><span class="pre">Gephi</span></code></a></p></li>
-</ul>
-<p><a class="reference external" href="http://Kepler.gl">Kepler.gl</a> 只需要将 GIS 数据拖拽到网页里，就可以生成地图了，可定制的地方也比较多，我非常喜欢用，在 VS Code 中也有插件可以直接预览。</p>
-<p>Gephi 主要是进行图的可视化，画复杂网络非常好用。</p>
+  <div class="section" id="json">
+<h1>JSON 数据解析<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h1>
+<p>JSON (JavaScript Object Notation) 是一种轻量级的数据交换格式。使用 Python 中的 <code class="docutils literal notranslate"><span class="pre">json</span></code> package 可以快速处理。</p>
+<p>Python 对象转化为 JSON 字符串（<code class="docutils literal notranslate"><span class="pre">json.dumps()</span></code>）</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;no&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Runoob&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;url&#39;</span> <span class="p">:</span> <span class="s1">&#39;http://www.runoob.com&#39;</span>
+<span class="p">}</span>
+
+<span class="n">json_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">json_str</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;{&quot;no&quot;: 1, &quot;name&quot;: &quot;Runoob&quot;, &quot;url&quot;: &quot;http://www.runoob.com&quot;}&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>JSON 字符串转化为 Python 对象（<code class="docutils literal notranslate"><span class="pre">json.loads()</span></code>）</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;no&#39;: 1, &#39;name&#39;: &#39;Runoob&#39;, &#39;url&#39;: &#39;http://www.runoob.com&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>写 JSON 文件（<code class="docutils literal notranslate"><span class="pre">json.dump()</span></code>）</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>读 JSON 文件（<code class="docutils literal notranslate"><span class="pre">json.load()</span></code>）</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;no&#39;: 1, &#39;name&#39;: &#39;Runoob&#39;, &#39;url&#39;: &#39;http://www.runoob.com&#39;}
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -253,24 +314,24 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "nbenv"
         },
         kernelOptions: {
-            kernelName: "python3",
-            path: "./visualization"
+            kernelName: "nbenv",
+            path: "./tricks"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'nbenv'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../tricks/json.html" title="previous page">JSON 数据解析</a>
-    <a class='right-next' id="next-link" href="plotly.html" title="next page">Plotly</a>
+    <a class='left-prev' id="prev-link" href="nbenv.html" title="previous page">Jupyter Notebook 环境</a>
+    <a class='right-next' id="next-link" href="../visualization/intro.html" title="next page">Visualization</a>
 
         </div>
         
