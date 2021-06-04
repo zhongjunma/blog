@@ -4,6 +4,7 @@
   chapters:
   - file: tricks/zen
   - file: tricks/nbenv
+  - file: tricks/pandas
   - file: tricks/json
 
 - part: 数据可视化
@@ -14,3 +15,7 @@
 - part: 地理空间数据
   chapters:
   - file: geo/geopandas.ipynb
+
+# conda activate jbenv
+# jb build .
+# ghp-import -n -p -f _build/html
