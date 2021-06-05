@@ -61,10 +61,27 @@ jupyter nbextension enable --py --sys-prefix qgrid
 
 进入 notebook 后去打勾
 
-1. Collapsible Headings，折叠标题
-2. ExecuteTime，记录cell运行时间戳和时间
-3. Hide input & Hide input all，隐藏单元格
-4. Table of Contents，创建目录，生成html带上目录
+1. AutoSaveTime，自动保存
+2. Autoscroll，自动折叠
+3. Codefolding，折叠代码
+6. Collapsible Headings，折叠标题
+7. datestamper，插入当前时间戳
+8. Equation Auto Numbering，$\LaTeX$ 公式自动编号
+9. ExecuteTime，记录cell运行时间戳和时间
+10. Export Embedded HTML，允许导出嵌入图片的 html
+11. Freeze，冻结 cell，禁止编辑
+12. Hide Header，隐藏所有按钮
+13. Hide input，隐藏一个 cell
+14. Hide input all，隐藏所有 cell
+15. highlighter，高亮字
+16. Hinterland，自动补全
+17. Skip-Traceback，把恼人的报错部分隐藏
+18. Snippets，快速插入预设代码
+19. Snippets Menu，超级无敌小抄
+20. Table of Contents (2)，创建目录，生成html带上目录
+21. Tree Filter，文件查找
+22. Variable Inspector，变量查看器
+23. zenmode，禅
 
 ## 修改字体
 

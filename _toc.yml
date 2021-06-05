@@ -18,6 +18,13 @@
 
 # file:///Users/mazhongjun/Documents/blog/_build/html/index.html
 # http://localhost:8888
+# https://zhongjunma.github.io/blog/intro.html
 # conda activate jbenv
 # jb build .
 # ghp-import -n -p -f _build/html
+
+# 启动 Jupyter Notebook
+# conda activate nbenv
+# nohup jupyter notebook
+# 查看 Jupyter notebook 进程
+# ps aux | grep jupyter
