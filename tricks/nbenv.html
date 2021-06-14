@@ -229,27 +229,39 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-package">
-   我需要的 Python package
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   安装
+   数据科学
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
+   爬虫
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#web">
+   Web 开发
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web-app">
+     爬虫 web app
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
    插件
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
+  <a class="reference internal nav-link" href="#id4">
    修改字体
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
+  <a class="reference internal nav-link" href="#id5">
    常用命令
   </a>
  </li>
@@ -266,8 +278,8 @@
                 
   <div class="section" id="jupyter-notebook">
 <h1>Jupyter Notebook 环境<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="python-package">
-<h2>我需要的 Python package<a class="headerlink" href="#python-package" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>数据科学<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>我通常使用 Jupyter Notebook 进行数据分析、简单测试程序或者写一些演示。常用的包有：</p>
 <p>数据科学</p>
 <ol class="simple">
@@ -307,9 +319,6 @@
 <li><p>jupyter_nbextensions_configurator</p></li>
 <li><p>jupyter_contrib_nbextensions</p></li>
 </ol>
-</div>
-<div class="section" id="id1">
-<h2>安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>复制粘贴，修改环境名，回车，然后等着</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">envname</span><span class="o">=</span><span class="s2">&quot;nbenv&quot;</span>
 conda create -n <span class="nv">$envname</span> <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8 --yes
@@ -324,7 +333,38 @@ jupyter nbextension <span class="nb">enable</span> --py --sys-prefix qgrid
 </div>
 </div>
 <div class="section" id="id2">
-<h2>插件<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>爬虫<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>爬虫，其实我主要是 web data extraction，也可以叫 web scraping 或者 web harvesting。</p>
+<ol class="simple">
+<li><p>requests（基础）</p></li>
+<li><p>beautifulsoup4（提取数据）</p></li>
+<li><p>scrapy（爬虫框架）</p></li>
+<li><p>selenium（自动化测试）</p></li>
+</ol>
+</div>
+<div class="section" id="web">
+<h2>Web 开发<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
+<p>直接学 Django 把。</p>
+<ol class="simple">
+<li><p>django</p></li>
+</ol>
+<div class="section" id="web-app">
+<h3>爬虫 web app<a class="headerlink" href="#web-app" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>requests</p></li>
+<li><p>selenium</p></li>
+<li><p>selenium-wire</p></li>
+<li><p>pandas</p></li>
+<li><p>django</p></li>
+</ol>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install --yes -c conda-forge requests selenium pandas django
+pip install selenium-wire
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>插件<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>进入 notebook 后去打勾</p>
 <ol class="simple">
 <li><p>AutoSaveTime，自动保存</p></li>
@@ -350,8 +390,8 @@ jupyter nbextension <span class="nb">enable</span> --py --sys-prefix qgrid
 <li><p>zenmode，禅</p></li>
 </ol>
 </div>
-<div class="section" id="id3">
-<h2>修改字体<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>修改字体<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Windows 中 notebook 的默认字体太丑了，换成微软雅黑。Microsoft Edge 下载插件 Super Styles，添加代码</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">#</span><span class="nn">notebook-container</span> <span class="o">*</span> <span class="p">{</span>
     <span class="k">font-family</span><span class="p">:</span> <span class="n">Consolas</span><span class="p">,</span> <span class="s2">&quot;微软雅黑&quot;</span>
@@ -359,14 +399,14 @@ jupyter nbextension <span class="nb">enable</span> --py --sys-prefix qgrid
 </pre></div>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>常用命令<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>常用命令<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>查看 jupyter kernel 都有哪些</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>jupyter kernelspec list
 </pre></div>
 </div>
 <p>删除 jupyter kernel</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">kernel_name</span><span class="o">=</span><span class="s2">&quot;delenv&quot;</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">kernel_name</span><span class="o">=</span><span class="s2">&quot;crawler&quot;</span>
 jupyter kernelspec remove <span class="nv">$kernel_name</span>
 </pre></div>
 </div>
