@@ -2,7 +2,7 @@
 
 ## 什么是 HTML？
 
-HTML 不是编程语言，是一种标记语言。以下内容整理自 [HTML 基础 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)
+HTML 不是编程语言，是一种标记语言。以下内容整理自 [HTML 基础 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
 
 ### 元素
 
@@ -88,10 +88,10 @@ HTML 包含 6 级标题，通常使用 3～4 级就够了。
 
 ### 列表（List）
 
-1. 有序列表（Ordering list），`ol`。
-2. 无需列表（Unordering list），`ul`。
+1. 有序列表（Ordering list），`<ol></ol>`。
+2. 无需列表（Unordering list），`<ul></ul>`。
 
-列表中的每一个项目用 `li` 来包围。
+列表中的每一个项目用 `<li></li>` 来包围。
 
 ```html
 <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
