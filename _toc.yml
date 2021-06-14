@@ -14,7 +14,11 @@
 
 - part: 地理空间数据
   chapters:
-  - file: geo/geopandas.ipynb
+  - file: geo/geopandas
+
+- part: Web 开发
+  chapters:
+  - file: web/html
 
 # file:///Users/mazhongjun/Documents/blog/_build/html/index.html
 # http://localhost:8888
