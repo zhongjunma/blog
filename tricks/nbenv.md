@@ -1,6 +1,6 @@
 # Jupyter Notebook 环境
 
-## 我需要的 Python package
+## 数据科学
 
 我通常使用 Jupyter Notebook 进行数据分析、简单测试程序或者写一些演示。常用的包有：
 
@@ -41,8 +41,6 @@ Notebook 相关
 3. jupyter_nbextensions_configurator
 4. jupyter_contrib_nbextensions
 
-## 安装
-
 复制粘贴，修改环境名，回车，然后等着
 
 ```sh
@@ -55,6 +53,34 @@ conda install --yes numpy pandas scipy scikit-learn matplotlib seaborn plotly ge
 python -m ipykernel install --name $envname
 jupyter contrib nbextension install --user
 jupyter nbextension enable --py --sys-prefix qgrid
+```
+
+## 爬虫
+
+爬虫，其实我主要是 web data extraction，也可以叫 web scraping 或者 web harvesting。
+
+1. requests（基础）
+2. beautifulsoup4（提取数据）
+3. scrapy（爬虫框架）
+4. selenium（自动化测试）
+
+## Web 开发
+
+直接学 Django 把。
+
+1. django
+
+### 爬虫 web app
+
+1. requests
+2. selenium
+3. selenium-wire
+4. pandas
+5. django
+
+```sh
+conda install --yes -c conda-forge requests selenium pandas django
+pip install selenium-wire
 ```
 
 ## 插件
@@ -104,7 +130,7 @@ jupyter kernelspec list
 删除 jupyter kernel
 
 ```sh
-kernel_name="delenv"
+kernel_name="crawler"
 jupyter kernelspec remove $kernel_name
 ```
 
