@@ -21,6 +21,7 @@
   - file: web/document
   - file: web/html
   - file: web/css
+  - file: web/js
 
 - part: 航运
   chapters:
