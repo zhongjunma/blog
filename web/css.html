@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JSON 数据解析 &#8212; 小🐎的博客</title>
+    <title>CSS 基础 &#8212; 小🐎的博客</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="../_static/PatrickStar.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Visualization" href="../visualization/intro.html" />
-    <link rel="prev" title="Pandas 小技巧" href="pandas.html" />
+    <link rel="next" title="名词解释" href="../maritime/noun.html" />
+    <link rel="prev" title="HTML 基础" href="html.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -89,24 +89,24 @@
   奇技淫巧
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="zen.html">
+  <a class="reference internal" href="../tricks/zen.html">
    The Zen of Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="nbenv.html">
+  <a class="reference internal" href="../tricks/nbenv.html">
    Jupyter Notebook 环境
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="pandas.html">
+  <a class="reference internal" href="../tricks/pandas.html">
    Pandas 小技巧
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tricks/json.html">
    JSON 数据解析
   </a>
  </li>
@@ -145,19 +145,19 @@
   Web 开发
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../web/document.html">
+  <a class="reference internal" href="document.html">
    处理文件
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../web/html.html">
+  <a class="reference internal" href="html.html">
    HTML 基础
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../web/css.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    CSS 基础
   </a>
  </li>
@@ -214,9 +214,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/tricks/json.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/web/css.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -234,7 +234,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Ftricks/json.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fweb/css.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -250,28 +250,34 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/zhongjunma/blog.git/master?urlpath=tree/tricks/json.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   CSS 是什么？
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   规则集
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   一切皆盒子
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -280,67 +286,51 @@
         
               <div>
                 
-  <div class="section" id="json">
-<h1>JSON 数据解析<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h1>
-<p>JSON (JavaScript Object Notation) 是一种轻量级的数据交换格式。使用 Python 中的 <code class="docutils literal notranslate"><span class="pre">json</span></code> package 可以快速处理。</p>
-<p>Python 对象转化为 JSON 字符串（<code class="docutils literal notranslate"><span class="pre">json.dumps()</span></code>）</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;no&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Runoob&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;url&#39;</span> <span class="p">:</span> <span class="s1">&#39;http://www.runoob.com&#39;</span>
+  <div class="section" id="css">
+<h1>CSS 基础<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>CSS 是什么？<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>CSS（Cascading Style Sheet，层叠样式表）是为网页添加样式的代码。跟 HTML 一样，CSS 也不是编程语言。CSS 也不是标记语言，是样式表语言。</p>
+</div>
+<div class="section" id="id2">
+<h2>规则集<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>想要修改 HTML 中的样式，需要在 HTML 的标签 <code class="docutils literal notranslate"><span class="pre">head</span></code> 中添加链接的代码：</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>&lt;link href=&quot;./styles/style.css&quot;, rel=&quot;stylesheet&quot;&gt;
+</pre></div>
+</div>
+<p>CSS 的结构称为规则集。</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
 <span class="p">}</span>
-
-<span class="n">json_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">json_str</span>
 </pre></div>
 </div>
+<p><img alt="规则集" src="../_images/css-declaration.png" /></p>
+<p>规则集的结构：</p>
+<ul class="simple">
+<li><p>选择器（selector），HTML 元素的名称</p></li>
+<li><p>声明（declaration），<code class="docutils literal notranslate"><span class="pre">color:</span> <span class="pre">red;</span></code> 在这里就是一个声明，是一个单独的规则。添加指定样式元素的属性。</p></li>
+<li><p>属性（properties），<code class="docutils literal notranslate"><span class="pre">color</span></code>，改变 HTML 元素样式。</p></li>
+<li><p>属性的值（property value），<code class="docutils literal notranslate"><span class="pre">red</span></code>，属性的冒号后边，分号前边。</p></li>
+</ul>
+<p>CSS 的其他语法：</p>
+<ul class="simple">
+<li><p>规则集在大括号内 <code class="docutils literal notranslate"><span class="pre">{}</span></code>。</p></li>
+<li><p>属性和属性值之间有冒号 <code class="docutils literal notranslate"><span class="pre">:</span></code>。</p></li>
+<li><p>声明要用分号 <code class="docutils literal notranslate"><span class="pre">;</span></code> 隔开。</p></li>
+<li><p>选择器中包含多个元素使用逗号 <code class="docutils literal notranslate"><span class="pre">,</span></code> 隔开。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/*注释内容*/</span></code></p></li>
+</ul>
+<p>选择器有多种类型，具体参阅<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">CSS 选择器</a></p>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;{&quot;no&quot;: 1, &quot;name&quot;: &quot;Runoob&quot;, &quot;url&quot;: &quot;http://www.runoob.com&quot;}&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>JSON 字符串转化为 Python 对象（<code class="docutils literal notranslate"><span class="pre">json.loads()</span></code>）</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;no&#39;: 1, &#39;name&#39;: &#39;Runoob&#39;, &#39;url&#39;: &#39;http://www.runoob.com&#39;}
-</pre></div>
-</div>
-</div>
-</div>
-<p>写 JSON 文件（<code class="docutils literal notranslate"><span class="pre">json.dump()</span></code>）</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>读 JSON 文件（<code class="docutils literal notranslate"><span class="pre">json.load()</span></code>）</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-<span class="n">data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;no&#39;: 1, &#39;name&#39;: &#39;Runoob&#39;, &#39;url&#39;: &#39;http://www.runoob.com&#39;}
-</pre></div>
-</div>
-</div>
+<div class="section" id="id3">
+<h2>一切皆盒子<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>CSS 布局主要基于盒模型：</p>
+<p><img alt="盒模型" src="../_images/box-model.png" /></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">padding</span></code>，内边距</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">border</span></code>，边框</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">margin</span></code>，外边距</p></li>
+</ul>
 </div>
 </div>
 
@@ -353,24 +343,24 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "nbenv"
+            mode: "python"
         },
         kernelOptions: {
-            kernelName: "nbenv",
-            path: "./tricks"
+            kernelName: "python3",
+            path: "./web"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'nbenv'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="pandas.html" title="previous page">Pandas 小技巧</a>
-    <a class='right-next' id="next-link" href="../visualization/intro.html" title="next page">Visualization</a>
+    <a class='left-prev' id="prev-link" href="html.html" title="previous page">HTML 基础</a>
+    <a class='right-next' id="next-link" href="../maritime/noun.html" title="next page">名词解释</a>
 
         </div>
         
