@@ -20,6 +20,10 @@
   chapters:
   - file: web/html
 
+- part: 航运
+  chapters:
+  - file: maritime/noun
+
 # file:///Users/mazhongjun/Documents/blog/_build/html/index.html
 # http://localhost:8888
 # https://zhongjunma.github.io/blog/intro.html
