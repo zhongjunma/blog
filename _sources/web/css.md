@@ -9,7 +9,7 @@ CSS（Cascading Style Sheet，层叠样式表）是为网页添加样式的代�
 想要修改 HTML 中的样式，需要在 HTML 的标签 `head` 中添加链接的代码：
 
 ```html
-<link href="./styles/style.css", rel="stylesheet">
+<link href="styles/style.css" rel="stylesheet">
 ```
 
 CSS 的结构称为规则集。

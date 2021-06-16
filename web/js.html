@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>处理文件 &#8212; 小🐎的博客</title>
+    <title>JavaScript 基础 &#8212; 小🐎的博客</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="../_static/PatrickStar.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="HTML 基础" href="html.html" />
-    <link rel="prev" title="Geopandas" href="../geo/geopandas.html" />
+    <link rel="next" title="名词解释" href="../maritime/noun.html" />
+    <link rel="prev" title="CSS 基础" href="css.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -146,8 +146,8 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="document.html">
    处理文件
   </a>
  </li>
@@ -161,8 +161,8 @@
    CSS 基础
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="js.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    JavaScript 基础
   </a>
  </li>
@@ -219,7 +219,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/web/document.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/web/js.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -239,7 +239,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fweb/document.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fweb/js.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -260,29 +260,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   网站文件怎样保存？
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   大小写？空格？
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   网站的结构
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -291,43 +268,9 @@
         
               <div>
                 
-  <div class="section" id="id1">
-<h1>处理文件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>网站文件怎样保存？<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>所有的网站项目应该保存在一个文件夹中，每一个网站项目再单独存放在一个文件夹中。管理好你的文件！</p>
-</div>
-<div class="section" id="id3">
-<h2>大小写？空格？<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>计算机通常是大小写敏感的</p></li>
-<li><p>不同的浏览器、编程语言对于空格的处理方式不同，这将导致链接遭到破坏</p></li>
-<li><p>下划线有时不会被识别为单词的分隔符</p></li>
-</ul>
-<p>养成好习惯！</p>
-<ol class="simple">
-<li><p>文件夹、文件名使用小写</p></li>
-<li><p>短横线 <code class="docutils literal notranslate"><span class="pre">-</span></code> 分隔单词，而不是下划线</p></li>
-</ol>
-</div>
-<div class="section" id="id4">
-<h2>网站的结构<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code>，网站主页</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">images</span></code> 文件夹，网站的所有图片</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">styles</span></code> 文件夹，网站的样式表</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scripts</span></code> 文件夹，网站的 JavaScript 代码</p></li>
-</ol>
-<p>结构就是这样：</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
-└── test-site
-    ├── index.html
-    ├── images
-    ├── styles
-    └── scripts
-</pre></div>
-</div>
-</div>
+  <div class="section" id="javascript">
+<h1>JavaScript 基础<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h1>
+<p>待整理。</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -355,8 +298,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../geo/geopandas.html" title="previous page">Geopandas</a>
-    <a class='right-next' id="next-link" href="html.html" title="next page">HTML 基础</a>
+    <a class='left-prev' id="prev-link" href="css.html" title="previous page">CSS 基础</a>
+    <a class='right-next' id="next-link" href="../maritime/noun.html" title="next page">名词解释</a>
 
         </div>
         
