@@ -12,7 +12,7 @@ FPSO 生产（process）和储存油，但是 FSO 只储存油。
 
 ## STS
 
-STS，（**s**hip-**t**o-ship **c**argo transfer），船对船过驳。[Wiki 介绍](https://en.wikipedia.org/wiki/Ship-to-ship_cargo_transfer)。
+STS，（**s**hip-**t**o-**s**hip cargo transfer），船对船过驳。[Wiki 介绍](https://en.wikipedia.org/wiki/Ship-to-ship_cargo_transfer)。
 
 > ship-to-ship (STS) transfer operation is the transfer of cargo between seagoing ships positioned alongside each other, either while stationary or underway. Cargoes typically transferred via STS methods include crude oil, liquefied gas (LPG or LNG), bulk cargo, and petroleum products. Most of cargo operations take place between a ship and a land-based terminal. Nevertheless, it sometimes can be useful to transfer cargo from one ship to another in the open sea and this is called a ship-to-ship operation. One vessel will act as the terminal whilst the other one will moor. The receiving ship is called the daughter vessel and the delivering vessel is called STBL (Ship to be lightered) or Mother vessel. 
 
