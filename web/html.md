@@ -2,7 +2,7 @@
 
 ## 什么是 HTML？
 
-HTML 不是编程语言，是一种标记语言。以下内容整理自 [HTML 基础 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
+HTML（**H**yper**T**ext **M**arkup **L**anguage），不是编程语言，是一种标记语言。以下内容整理自 [HTML 基础 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
 
 ### 元素
 
