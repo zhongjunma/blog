@@ -29,7 +29,9 @@ p {
 - 属性（properties），`color`，改变 HTML 元素样式。
 - 属性的值（property value），`red`，属性的冒号后边，分号前边。
 
-CSS 的其他语法：
+选择器有多种类型，具体参阅[CSS 选择器](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+
+## 语法
 
 - 规则集在大括号内 `{}`。
 - 属性和属性值之间有冒号 `:`。
@@ -37,7 +39,7 @@ CSS 的其他语法：
 - 选择器中包含多个元素使用逗号 `,` 隔开。
 - `/*注释内容*/`
 
-选择器有多种类型，具体参阅[CSS 选择器](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+
 
 ## 一切皆盒子
 
