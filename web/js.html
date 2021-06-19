@@ -260,6 +260,49 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   什么是 JavaScript？
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   变量
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   注释
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   运算符
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   条件语句
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   函数
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   事件
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -270,9 +313,126 @@
                 
   <div class="section" id="javascript">
 <h1>JavaScript 基础<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h1>
-<p>待整理。</p>
-<p>2021-06-17 完成此部分
-2021-06-18 完成 HTML 的子部分</p>
+<div class="section" id="id1">
+<h2>什么是 JavaScript？<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript（JS）是一门动态编程语言。结合 HTML 可以为网站提供动态交互特性。由 Brendan Eich（Mozilla 项目、Mozilla 基金会和 Mozilla 公司的联合创始人）发明。</p>
+<p>想要 JS 在 HTML 中生效，需要在 HTML 的 <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code> 前添加</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;scripts/main.js&quot;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>在最后一行添加是因为浏览器会按照代码在文件中的顺序加载 HTML，为了避免 HTML 尚未被加载而失效，将 JS 代码放在最后是一个好策略。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>变量<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>变量的数据类型包括：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>数据类型</p></th>
+<th class="head"><p>解释</p></th>
+<th class="head"><p>示例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>String</p></td>
+<td><p>字符串，单双引号都可以</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'玛奇玛'</span></code>、<code class="docutils literal notranslate"><span class="pre">&quot;蕾塞&quot;</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Number</p></td>
+<td><p>数字</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Boolean</p></td>
+<td><p>布尔值，关键字，无需引号</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> 和 <code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Array</p></td>
+<td><p>数组，储存多个值</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">'玛奇玛',</span> <span class="pre">&quot;蕾塞&quot;]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Object</p></td>
+<td><p><strong>一切皆对象，一切皆可储存在变量里</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">document.querySelector('h1')</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>注释<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">跨行</span>
+<span class="cm">跨行</span>
+<span class="cm">*/</span>
+
+<span class="c1">// 单行</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>运算符<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>运算符</p></th>
+<th class="head"><p>符号</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>加</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>减</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>乘</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>除</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>赋值</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">=</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>等于</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">===</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>不等于</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>取非</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">!</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>条件语句<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>函数<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">funcName</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="nx">y</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>事件<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>事件为网页添加真实的交互能力。可以捕捉浏览器操作并且运行一些代码作为相应。例如点击事件。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">).</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;点击页面&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>这段代码的意思是：将匿名函数赋值给了 <code class="docutils literal notranslate"><span class="pre">html</span></code> 的 <code class="docutils literal notranslate"><span class="pre">onclick</span></code> 属性。</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
