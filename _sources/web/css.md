@@ -2,7 +2,7 @@
 
 ## 什么是 CSS？
 
-CSS（Cascading Style Sheet，层叠样式表）是为网页添加样式的代码。跟 HTML 一样，CSS 也不是编程语言。CSS 也不是标记语言，是样式表语言。
+CSS（**C**ascading **S**tyle **S**heet，层叠样式表）是为网页添加样式的代码。跟 HTML 一样，CSS 也不是编程语言。CSS 也不是标记语言，是样式表语言。
 
 想要修改 HTML 中的样式，需要在 HTML 的标签 `head` 中添加链接的代码：
 
