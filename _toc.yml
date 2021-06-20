@@ -20,6 +20,8 @@
   chapters:
   - file: web/document
   - file: web/html
+    sections:
+    - file: web/html/base
   - file: web/css
   - file: web/js
 
