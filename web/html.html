@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML 基础 &#8212; 小🐎的博客</title>
+    <title>HTML &#8212; 小🐎的博客</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -53,7 +53,7 @@
     <link rel="shortcut icon" href="../_static/PatrickStar.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CSS 基础" href="css.html" />
+    <link rel="next" title="HTML 基础" href="html/base.html" />
     <link rel="prev" title="处理文件" href="document.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -151,10 +151,22 @@
    处理文件
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   HTML 基础
+   HTML
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="html/base.html">
+     HTML 基础
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="css.html">
@@ -269,31 +281,14 @@
   <a class="reference internal nav-link" href="#id1">
    什么是 HTML？
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     元素
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     HTML 文档结构
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     HTML 语法
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
+  <a class="reference internal nav-link" href="#id2">
    标签
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
+    <a class="reference internal nav-link" href="#id3">
      图像
     </a>
    </li>
@@ -331,68 +326,19 @@
               <div>
                 
   <div class="section" id="html">
-<h1>HTML 基础<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h1>
+<h1>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
 <h2>什么是 HTML？<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage），不是编程语言，是一种标记语言。以下内容整理自 <a class="reference external" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML 基础 - 学习 Web 开发 | MDN</a>。</p>
+<p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage），不是编程语言，是一种标记语言。</p>
+<p>以下内容整理自 <a class="reference external" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML">学习 HTML ：指南与教程</a>。</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="html/base.html#html-base-label"><span class="std std-ref">HTML 基础</span></a></p></li>
+</ul>
+</div>
 <div class="section" id="id2">
-<h3>元素<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>HTML 由一系列元素（elements）组成。一个元素的例子：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;editor-note&quot;</span><span class="p">&gt;</span>我的猫咪脾气爆<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<p>元素包括：</p>
-<ol class="simple">
-<li><p>开始标签（Opening tag）<code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code>。</p></li>
-<li><p>结束标签（Closing tag）<code class="docutils literal notranslate"><span class="pre">&lt;/p&gt;</span></code>。</p></li>
-<li><p>内容（Content）<code class="docutils literal notranslate"><span class="pre">我的猫咪脾气爆</span></code>。</p></li>
-<li><p>属性（Attribute）<code class="docutils literal notranslate"><span class="pre">class=&quot;editor-note&quot;</span></code>，其中，<code class="docutils literal notranslate"><span class="pre">class</span></code> 是属性名称，<code class="docutils literal notranslate"><span class="pre">editor-note</span></code> 是属性值。</p></li>
-</ol>
-<p>元素可以嵌套，称为嵌套元素：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;editor-note&quot;</span><span class="p">&gt;</span>我的猫咪脾气<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>爆<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<p>元素内容也可以为空，称为空元素。空元素<em>没有内容</em>，也<em>没有结束标签</em>：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../images/asuka.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;明日香&quot;</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-</div>
+<h2>标签<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id3">
-<h3>HTML 文档结构<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>HTML 是由一系列元素构成的，一个简单完整的 HTML 页面：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>测试页面<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/firefox-icon.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;测试图片&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<p>这个 HTML 包括：</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;!DOCTYPE</span> <span class="pre">html&gt;</span></code>，文档类型，当今作用有限，仅用于保证文档正确读取。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;html&gt;&lt;/html&gt;</span></code>，根元素，包含整个页面的内容。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;head&gt;&lt;/head&gt;</span></code>，其内容对用户不可见，主要包括：搜索关键字、页面描述、CSS样式表以及字符编码声明等。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;utf-8&quot;&gt;</span></code>，HTML 文档的字符编码声明，UTF-8 已经包括绝大多数人类已知语言的字符，因此比较常用。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;title&gt;&lt;/title&gt;</span></code>，页面的标题，显示在浏览器标签页上，或者收藏网页时的描述文字。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;&lt;/body&gt;</span></code>，包含用户看到的内容，包括文本、图片、视频、游戏、可播放的音轨或其他内容。</p></li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h3>HTML 语法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;!--</span> <span class="pre">注释内容</span> <span class="pre">--&gt;</span></code></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id5">
-<h2>标签<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3>图像<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3>图像<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/firefox-icon.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;测试图片&quot;</span><span class="p">&gt;</span>
 </pre></div>
 </div>
@@ -440,6 +386,8 @@
 </pre></div>
 </div>
 <p>元素的属性 <code class="docutils literal notranslate"><span class="pre">href</span></code> 指的是“超文本引用（<strong>h</strong>ypertext <strong>ref</strong>erence）”，<code class="docutils literal notranslate"><span class="pre">href</span></code> 的指就是网址的链接，元素的内容是网址的描述内容。</p>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 </div>
@@ -470,7 +418,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="document.html" title="previous page">处理文件</a>
-    <a class='right-next' id="next-link" href="css.html" title="next page">CSS 基础</a>
+    <a class='right-next' id="next-link" href="html/base.html" title="next page">HTML 基础</a>
 
         </div>
         
