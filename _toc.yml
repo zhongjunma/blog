@@ -22,6 +22,7 @@
   - file: web/html
     sections:
     - file: web/html/base
+    - file: web/html/head
   - file: web/css
   - file: web/js
 
