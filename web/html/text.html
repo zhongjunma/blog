@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>头部元素 &#8212; 小🐎的博客</title>
+    <title>文字处理 &#8212; 小🐎的博客</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,14 +49,12 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="shortcut icon" href="../../_static/PatrickStar.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="文字处理" href="text.html" />
-    <link rel="prev" title="HTML 基础" href="base.html" />
+    <link rel="next" title="CSS 基础" href="../css.html" />
+    <link rel="prev" title="头部元素" href="head.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -168,13 +166,13 @@
      HTML 基础
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="head.html">
      头部元素
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="text.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      文字处理
     </a>
    </li>
@@ -243,7 +241,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/web/html/head.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/web/html/text.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -263,7 +261,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fweb/html/head.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/zhongjunma/blog.git/issues/new?title=Issue%20on%20page%20%2Fweb/html/text.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -290,38 +288,18 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html">
-   什么是 HTML 的头部元素？
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   标题
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#meta">
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     &lt;meta&gt;
-    </span>
-   </code>
-   元素
+   标题和段落
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   自定义图标
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html-css-javascript">
-   在 HTML 中应用 CSS 和 JavaScript
+   列表
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   设定文档的主语言
+   重点强调
   </a>
  </li>
 </ul>
@@ -335,79 +313,103 @@
         
               <div>
                 
-  <div class="section" id="html-head-label">
-<span id="id1"></span><h1>头部元素<a class="headerlink" href="#html-head-label" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="html">
-<h2>什么是 HTML 的头部元素？<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
-<p>HTML 中的 <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> 元素中的内容不会显示在浏览器中，它的作用是保存一些元数据。</p>
-<blockquote>
-<div><p>Metadata ——元数据，描述数据的数据。比如，一个 HTML 文件是一份数据，HTML 的 <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> 元素中也包含了描述 HTML 的元数据（文档作者和概要）。</p>
-</div></blockquote>
-<p>大型页面的 <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> 中会包含很多元数据，以下是一个简短的例子：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>测试页面<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-</div>
+  <div class="section" id="html-text-label">
+<span id="id1"></span><h1>文字处理<a class="headerlink" href="#html-text-label" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<h2>标题<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;title&gt;</span></code> 用于表示整个 HTML 文档的标题，是在 <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> 中的元数据。</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> 也是标题，但是是页面内容的标题，在 <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> 中，要注意区分两者。</p>
-</div></blockquote>
-</div>
-<div class="section" id="meta">
-<h2><code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 元素<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h2>
-<p>为 HTML 文档添加元数据需要用到 <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 元素。</p>
-<p>指定文档的字符编码时，如下：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<h2>标题和段落<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>HTML 包含 6 级标题，在同一个页面中通常使用 3～4 级就够了。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>主标题<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>顶层标题<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>子标题<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>次子标题<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p>许多 <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 都包含了两个属性 <code class="docutils literal notranslate"><span class="pre">name</span></code> 和 <code class="docutils literal notranslate"><span class="pre">content</span></code>：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> 指定 <code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 元素的类型</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">content</span></code> 指定元数据内容</p></li>
+<li><p>切记不要使用过多级标题，这样会导致混乱。</p></li>
+<li><p>一级标题 <code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> 在一个页面中只使用一次。</p></li>
+<li><p>层次结构要合理。</p></li>
 </ul>
-<p>比如添加 HTML 的作者和描述。在搜索引擎中，描述会被显示在搜索引擎显示的结果中。</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;author&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Ma Zhongjun&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;这是一个测试页面&quot;</span><span class="p">&gt;</span>
+<p>段落通常用于指定常规的文本内容。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>这是一个段落<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 也可以向某些网站提供可使用的特定信息。需要遵守这些网站的协议，此处不再赘述，详情可查<a class="reference external" href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#%E5%85%B6%E4%BB%96%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE">此处</a>。</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> 是一个语义元素。我们看到什么，就知道他要代表什么，<code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> 告诉我们标题是什么，而不是肩带改变这段文字的样式。</p>
+</div></blockquote>
 </div>
 <div class="section" id="id3">
-<h2>自定义图标<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;meta&gt;</span></code> 中可以设置网站的自定义图标。这个图标通常是 <span class="math notranslate nohighlight">\(16\times16\)</span> 像素，这个图标会出现在标签页和收藏夹中。</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;favicon.ico&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/x-icon&quot;</span><span class="p">&gt;</span>
+<h2>列表<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>有序列表（Ordering list），<code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;&lt;/ol&gt;</span></code>。</p></li>
+<li><p>无需列表（Unordering list），<code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;&lt;/ul&gt;</span></code>。</p></li>
+</ol>
+<p>列表中的每一个项目用 <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;&lt;/li&gt;</span></code> 来包围。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>技术人员<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>思考者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>建造者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>技术人员<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>思考者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>建造者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="html-css-javascript">
-<h2>在 HTML 中应用 CSS 和 JavaScript<a class="headerlink" href="#html-css-javascript" title="Permalink to this headline">¶</a></h2>
-<p>CSS 如下，<code class="docutils literal notranslate"><span class="pre">rel=&quot;stylesheet&quot;</span></code> 表明这是文档的样式表。</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;my-css-file.css&quot;</span><span class="p">&gt;</span>
+<p>显示如下：</p>
+<ul>
+  <li>技术人员</li>
+  <li>思考者</li>
+  <li>建造者</li>
+</ul>
+<ol>
+  <li>技术人员</li>
+  <li>思考者</li>
+  <li>建造者</li>
+</ol>
+<p>列表也是可以嵌套的，例如：</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>技术人员<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>思考者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>建造者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>技术人员<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>思考者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>建造者<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p>JavaScript 通常放在文档的尾部，<code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code> 之前。</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;my-js-file.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">script</span></code> 并不是空元素，因为可以直接把 JS 源码凡在元素内容的位置。</p>
-</div></blockquote>
+<p>显示如下：</p>
+<ul>
+  <li>技术人员</li>
+  <li>思考者</li>
+  <li>建造者</li>
+  <ol>
+    <li>技术人员</li>
+    <li>思考者</li>
+    <li>建造者</li>
+    </ol>
+</ul>
 </div>
 <div class="section" id="id4">
-<h2>设定文档的主语言<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>这个是在 <code class="docutils literal notranslate"><span class="pre">&lt;html&gt;</span></code> 中设置的：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span><span class="p">&gt;</span>
+<h2>重点强调<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>强调 <code class="docutils literal notranslate"><span class="pre">&lt;em&gt;</span></code>，即 emphasis。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>用<span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>斜体<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>表示强调的字。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p>也可以将文档的不同部分设置为不同的语言，例如：</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>日语实例: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;jp&quot;</span><span class="p">&gt;</span>ご飯が熱い。<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<p>显示如下：</p>
+<p>用<em>斜体</em>表示强调的字。</p>
+<p>非常重要 <code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;</span></code>。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>用<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>粗体<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>字强调重要的字。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </pre></div>
 </div>
+<p>显示如下：</p>
+<p>用<strong>粗体</strong>字强调重要的字。</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&lt;em&gt;</span></code> 和 <code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;</span></code> 都是语义元素。屏幕阅读器能够识别出来，而不是单纯的斜体和加粗。斜体 <code class="docutils literal notranslate"><span class="pre">&lt;i&gt;</span></code>、加粗 <code class="docutils literal notranslate"><span class="pre">&lt;b&gt;</span></code> 都是表象元素，只改变外观，不表示强调。</p>
+</div></blockquote>
 </div>
 </div>
 
@@ -436,8 +438,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="base.html" title="previous page">HTML 基础</a>
-    <a class='right-next' id="next-link" href="text.html" title="next page">文字处理</a>
+    <a class='left-prev' id="prev-link" href="head.html" title="previous page">头部元素</a>
+    <a class='right-next' id="next-link" href="../css.html" title="next page">CSS 基础</a>
 
         </div>
         
