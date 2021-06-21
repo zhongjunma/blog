@@ -24,6 +24,7 @@
     - file: web/html/base
     - file: web/html/head
     - file: web/html/text
+    - file: web/html/hyperlink
   - file: web/css
   - file: web/js
 
