@@ -3,6 +3,7 @@
 
 title: 小🐎的博客
 author: Ma Zhongjun
+copyright: "2021"
 logo: ./images/logo.GIF
 
 # Force re-execution of notebooks on each build.
