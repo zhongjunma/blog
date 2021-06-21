@@ -7,6 +7,7 @@ HTML（**H**yper**T**ext **M**arkup **L**anguage），不是编程语言，是�
 以下内容整理自 [学习 HTML ：指南与教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)。
 
 - [HTML 基础](html-base-label)
+- [头部元素](html-head-label)
 
 ## 标签
 
