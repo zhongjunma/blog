@@ -25,6 +25,7 @@
     - file: web/html/head
     - file: web/html/text
     - file: web/html/hyperlink
+    - file: web/html/advanced-text
   - file: web/css
   - file: web/js
 
