@@ -119,7 +119,7 @@
 - `<pre>` 用来保留空白符，可以结合 `<code>` 来标记代码块。
 
 ```
-<code>import panda as pd</code>
+<code>import pandas as pd</code>
 
 <pre><code>
 def add(x, y):
