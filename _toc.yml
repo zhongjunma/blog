@@ -19,13 +19,11 @@
 - part: Web 开发
   chapters:
   - file: web/document
-  - file: web/html
+  - file: web/html/intro
     sections:
-    - file: web/html/base
-    - file: web/html/head
+    - file: web/html/element
     - file: web/html/text
-    - file: web/html/hyperlink
-    - file: web/html/advanced-text
+    - file: web/html/structure
   - file: web/css
   - file: web/js
 
