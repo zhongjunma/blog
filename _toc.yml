@@ -1,22 +1,20 @@
-- file: intro
-
-- part: 奇技淫巧
+format: jb-book
+root: intro
+parts:
+- caption: "奇技淫巧"
   chapters:
   - file: tricks/zen
   - file: tricks/nbenv
   - file: tricks/pandas
   - file: tricks/json
-
-- part: 数据可视化
+- caption: "数据可视化"
   chapters:
   - file: visualization/intro
   - file: visualization/plotly
-
-- part: 地理空间数据
+- caption: "地理空间数据"
   chapters:
   - file: geo/geopandas
-
-- part: Web 开发
+- caption: "Web 开发"
   chapters:
   - file: web/document
   - file: web/html/intro
@@ -26,20 +24,6 @@
     - file: web/html/structure
   - file: web/css
   - file: web/js
-
-- part: 航运
+- caption: "\u822A\u8FD0"
   chapters:
   - file: maritime/noun
-
-# file:///Users/mazhongjun/Documents/blog/_build/html/index.html
-# http://localhost:8888
-# https://zhongjunma.github.io/blog/intro.html
-# conda activate jbenv
-# jb build .
-# ghp-import -n -p -f _build/html
-
-# 启动 Jupyter Notebook
-# conda activate nbenv
-# nohup jupyter notebook
-# 查看 Jupyter notebook 进程
-# ps aux | grep jupyter
