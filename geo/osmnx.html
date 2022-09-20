@@ -528,118 +528,40 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">places_df</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">geocode_to_gdf</span><span class="p">(</span><span class="n">osmids</span><span class="p">,</span> <span class="n">by_osmid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">places_df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>每条数据包含的字段：</p>
+<ul class="simple">
+<li><p>geometry，多边形</p></li>
+<li><p>bbox_north 等，多边形的范围</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">places_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>geometry</th>
-      <th>bbox_north</th>
-      <th>bbox_south</th>
-      <th>bbox_east</th>
-      <th>bbox_west</th>
-      <th>place_id</th>
-      <th>osm_type</th>
-      <th>osm_id</th>
-      <th>lat</th>
-      <th>lon</th>
-      <th>display_name</th>
-      <th>class</th>
-      <th>type</th>
-      <th>importance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>MULTIPOLYGON (((73.49973 39.38174, 73.50003 39...</td>
-      <td>53.560815</td>
-      <td>8.653747</td>
-      <td>134.775456</td>
-      <td>73.499735</td>
-      <td>297121566</td>
-      <td>relation</td>
-      <td>270056</td>
-      <td>35.000074</td>
-      <td>104.999927</td>
-      <td>China</td>
-      <td>boundary</td>
-      <td>administrative</td>
-      <td>0.878827</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>POLYGON ((113.81724 22.21734, 113.83238 22.183...</td>
-      <td>22.568333</td>
-      <td>22.136725</td>
-      <td>114.502487</td>
-      <td>113.817241</td>
-      <td>297827992</td>
-      <td>relation</td>
-      <td>913110</td>
-      <td>22.350627</td>
-      <td>114.184916</td>
-      <td>Hong Kong, China</td>
-      <td>boundary</td>
-      <td>administrative</td>
-      <td>0.764302</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>MULTIPOLYGON (((113.52817 22.18217, 113.52942 ...</td>
-      <td>22.217036</td>
-      <td>22.076667</td>
-      <td>113.630139</td>
-      <td>113.528167</td>
-      <td>297598796</td>
-      <td>relation</td>
-      <td>1867188</td>
-      <td>22.175760</td>
-      <td>113.551414</td>
-      <td>Macau, China</td>
-      <td>boundary</td>
-      <td>administrative</td>
-      <td>0.671876</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>MULTIPOLYGON (((114.28806 10.34694, 114.33611 ...</td>
-      <td>26.437222</td>
-      <td>10.326667</td>
-      <td>122.328300</td>
-      <td>114.288056</td>
-      <td>298026674</td>
-      <td>relation</td>
-      <td>449220</td>
-      <td>23.973937</td>
-      <td>120.982018</td>
-      <td>Taiwan</td>
-      <td>boundary</td>
-      <td>administrative</td>
-      <td>0.749420</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>geometry        (POLYGON ((73.4997347 39.3817402, 73.5000261 3...
+bbox_north                                              53.560815
+bbox_south                                               8.653747
+bbox_east                                              134.775456
+bbox_west                                               73.499735
+place_id                                                297121566
+osm_type                                                 relation
+osm_id                                                     270056
+lat                                                     35.000074
+lon                                                    104.999927
+display_name                                                China
+class                                                    boundary
+type                                               administrative
+importance                                               0.878827
+Name: 0, dtype: object
+</pre></div>
+</div>
+</div>
 </div>
 <p>展示获取的范围</p>
 <div class="cell docutils container">
@@ -649,7 +571,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/osmnx_7_0.svg" src="../_images/osmnx_7_0.svg" /></div>
+<img alt="../_images/osmnx_9_0.svg" src="../_images/osmnx_9_0.svg" /></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
